@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+}
+
+/*
+********************************************************************
+********************************************************************
+*****************       Header     *********************************
+********************************************************************
+********************************************************************
+*/
+
+header {
+  width: 100%;
+
+}
+
+.flex-nav {
+  display: flex;
+  padding: 10px;
+}
+
+.navigation {
+  width: 50%;
+}
+
+.navbarBrand {
+  width: 50%;
+  text-align: center;
+}
+
+
+/* slide animation pulled from https://stackoverflow.com/questions/16989585/css-3-slide-in-from-left-transition */
+#slide {
+  width: 100%;
+  position: absolute;
+  left: -2800px;
+  -webkit-animation: slide 1.5s forwards;
+  -webkit-animation-delay: 1s;
+  animation: slide 1.5s forwards;
+  animation-delay: 1s;
+  font-weight: 500;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
+
+#slideBack {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-animation: slide 1.5s;
+  -webkit-animation-delay: 1s;
+  animation: slide 1.5s;
+  animation-delay: 1s;
+  font-weight: 500;
+  animation-name: slideBack;
+}
+
+@-webkit-keyframes slideBack {
+    100% {
+            left: -1000px;
+
+         }
+}
+
+@keyframes slideBack {
+    100% {
+            left: -1000px;
+
+         }
+}
+
+
+/* spin animation pulled from https://stackoverflow.com/questions/16771225/css3-rotate-animation */
+
+#brand {
+    border-radius: 50%;
+    -webkit-animation:spin 4s linear;
+    -moz-animation:spin 4s linear;
+    animation:spin 4s linear;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  list-style-type: none;
+  padding: 5px 0;
+
+}
+
+
+
+#slideBackButton {
+  position: absolute;
+  top: 120px;
+  left: 5px;
+  color: lime;
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+}
+
+/*
+********************************************************************
+********************************************************************
+*****************       Body     ***********************************
+********************************************************************
+********************************************************************
+*/
+
+body {
+  padding-top: 0px;
+  font-family: 'Open Sans', sans-serif;
+  border: 2px solid black;
+
+}
+
+
+
+.wrapper {
+  width: 100%;
+  background-image: linear-gradient(yellow, orange);
+
+
+}
+
+.project {
+  padding-top: 50px;
+  height: 300px;
+  text-align: center;
+
+
+}
+
+/* img {
+  height: 200px;
+  width: 80%;
+  box-shadow: 2px 5px black;
+
+} */
+
+h4 {
+
+  padding: 30px;
+}
+
+h5 {
+  padding: 0 30px;
+}
+
+p {
+  padding: 0 30px;
+}
+
+#instruction {
+  display: none;
+}
+
+
+.horizontal-flex-div {
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+
+.rotating-box-huge {
+  display: none;
+}
