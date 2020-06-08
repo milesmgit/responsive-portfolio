@@ -205,7 +205,7 @@ slide.id = "slide";
         <div class="topPlacement">
           <button class="toTopButton"><a class="top" href="#header">Top</a></button>
         </div>`
-      body.style.height = "1000px";
+      body.style.height = "1200px";
     }, 1000);
 
 
