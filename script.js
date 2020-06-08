@@ -39,8 +39,9 @@ window.onload = function() {
 
   ul.appendChild(li1);
   let homeLink = document.createElement('a');
-  homeLink.className = "responsiveLink";
+  homeLink.class = "responsiveLink";
   homeLink.innerHTML = "Home";
+  homeLink.href = "#header";
   li1.appendChild(homeLink);
 
   let li2 = document.createElement('li');
@@ -48,8 +49,9 @@ window.onload = function() {
 
   ul.appendChild(li2);
   let galleryLink = document.createElement('a');
-  galleryLink.class = "responsiveLink";
+  galleryLink.className = "responsiveLink";
   galleryLink.innerHTML = "Gallery";
+  galleryLink.href = "#header";
   li2.appendChild(galleryLink);
 
   let li3 = document.createElement('li');
@@ -57,8 +59,9 @@ window.onload = function() {
 
   ul.appendChild(li3);
   let credentialsLink = document.createElement('a');
-  credentialsLink.class = "responsiveLink";
+  credentialsLink.className = "responsiveLink";
   credentialsLink.innerHTML = "Credentials";
+  credentialsLink.href = "#header";
   li3.appendChild(credentialsLink);
 
   let li4 = document.createElement('li');
@@ -66,15 +69,16 @@ window.onload = function() {
 
   ul.appendChild(li4);
   let contactLink = document.createElement('a');
-  contactLink.class = "responsiveLink";
+  contactLink.className = "responsiveLink";
   contactLink.innerHTML = "Contact Me";
+  contactLink.href = "#header";
   li4.appendChild(contactLink);
 
   let divNavBarBrand = document.createElement('div');
-  divNavBarBrand.class = "navbarBrand";
+  divNavBarBrand.className = "navbarBrand";
   divNavBarBrand.innerHTML = `
     <a href="index.html">
-      <img class="navbarBrand" src="img/matt-miles.jpeg" id="brand" width="100" height="100" class="d-inline-block align-center pic-brand" alt="" loading="lazy">
+      <img src="img/matt-miles.jpeg" id="brand" width="100" height="100" class="d-inline-block align-center pic-brand" alt="" loading="lazy">
     </a>
   `
 
@@ -82,9 +86,9 @@ window.onload = function() {
 
 
   homeLink.addEventListener('click', displayIntro);
-  // galleryLink.addEventListener('click', displayGallery);
+  galleryLink.addEventListener('click', displayGallery);
   credentialsLink.addEventListener('click', displayCredentials);
-  // contactLink.addEventListener('click', displayContact);
+  contactLink.addEventListener('click', displayContact);
 
 
 slide.id = "slide";
@@ -93,11 +97,8 @@ slide.id = "slide";
 
   function displayIntro() {
     slide.id = "slide";
-
-
-
-  console.log(slide.innerHTML);
-  setTimeout(function(){
+    console.log(slide.innerHTML);
+    setTimeout(function(){
     landingPage.innerHTML = `
       <p class="headline1">MATTHEW MILES</p>
       <P class="headline2">DEVELOPER</p>
@@ -105,8 +106,10 @@ slide.id = "slide";
   }, 2000);
 
 
-// function to hide the navigation and brand (this works in unison with css animations for id slideBack)
+
   }
+
+  // function to hide the navigation and brand (this works in unison with css animations for id slideBack)
   function slideBack() {
     if(slide.id === "slide"){
       slide.id = "slideBack";
@@ -116,7 +119,7 @@ slide.id = "slide";
       setTimeout(function(){
       slide.style.display = 'none';
       buttonSlideBack.innerText = "Menu";
-      }, 2000);
+    }, 2000);
 
       console.log('hello');
     }
@@ -125,7 +128,7 @@ slide.id = "slide";
       setTimeout(function(){
       aboutMe.style.display = 'none';
       slideBackButton.innerText = "Bio";
-      }, 2000);
+    }, 2000);
       displayIntro();
 
       aboutMe.id = "aboutMeBack";
@@ -168,6 +171,9 @@ slide.id = "slide";
                                   terms and decreased member/agent satisfaction due to massive outages affecting many people or critical applications/software.
 
                     </p>
+                    <div class="topPlacement">
+                      <button id="toTopButton"><a id="top" href="#header">Top</a></button>
+                    </div>
                     `
 
 
@@ -175,69 +181,82 @@ slide.id = "slide";
 
 
   function displayCredentials() {
-    wrapper.innerHTML = `
-      <div id="main-flex">
-        <div class="card">
-          <div class="resources"><p>Resume</p><a href="https://drive.google.com/file/d/1-tlYJYkcMLbY3jegKX5seRLQ8ff6mQgM/view?usp=sharing" target="_blank"><img src="img/google-drive.jpeg"  alt="Matthew Miles: Resume" width="100" height="100" title="Click to view/download resume (Google Drive):  https://drive.google.com/file/d/1-tlYJYkcMLbY3jegKX5seRLQ8ff6mQgM/view?usp=sharing"></a></div>
+    setTimeout(function() {
+      wrapper.innerHTML = `
+        <div id="main-flex">
+          <div class="card">
+            <div class="resources"><p>Resume</p><a href="https://drive.google.com/file/d/1-tlYJYkcMLbY3jegKX5seRLQ8ff6mQgM/view?usp=sharing" target="_blank"><img src="img/google-drive.jpeg"  alt="Matthew Miles: Resume" width="75" height="75" title="Click to view/download resume (Google Drive):  https://drive.google.com/file/d/1-tlYJYkcMLbY3jegKX5seRLQ8ff6mQgM/view?usp=sharing"></a></div>
+          </div>
+          <div class="card">
+            <div class="resources"><p>LinkedIn Profile</p><a href="https://linkedin.com/in/matthew-miles-code-louisville" target="_blank"><img src="img/linked.jpeg"  alt="Matthew Miles: Linked-In Profile" width="75" height="75" title="Click to view my Linked-In Profile:  https://linkedin.com/in/matthew-miles-code-louisville"></a></div>
+          </div>
+          <div class="card">
+            <div class="resources"><p>GitHub Profile</p><a href="https://github.com/milesmgit?tab=repositories" target="_blank"><img src="img/github.png"  alt="Matthew Miles: GitHub" width="75" height="75" title="Click to view GitHub Profile:  https://github.com/milesmgit?tab=repositories"></a></div>
+          </div>
+          <div class="card">
+            <div class="resources"><p>Bio</p><img id="matt-bio" src="img/matt-miles.jpeg"  onclick="displayBio()" alt="Matthew Miles: Bio" width="75" height="75" title="Click to view Bio:  https://github.com/milesmgit?tab=repositories"></a></div>
+          </div>
         </div>
-        <div class="card">
-          <div class="resources"><p>LinkedIn Profile</p><a href="https://linkedin.com/in/matthew-miles-code-louisville" target="_blank"><img src="img/linked.jpeg"  alt="Matthew Miles: Linked-In Profile" width="100" height="100" title="Click to view my Linked-In Profile:  https://linkedin.com/in/matthew-miles-code-louisville"></a></div>
-        </div>
-        <div class="card">
-          <div class="resources"><p>GitHub Profile</p><a href="https://github.com/milesmgit?tab=repositories" target="_blank"><img src="img/github.png"  alt="Matthew Miles: GitHub" width="100" height="100" title="Click to view GitHub Profile:  https://github.com/milesmgit?tab=repositories"></a></div>
-        </div>
-        <div class="card">
-          <div class="resources"><p>Bio</p><img id="matt-bio" src="img/matt-miles.jpeg"  onclick="displayBio()" alt="Matthew Miles: Bio" width="100" height="100" title="Click to view Bio:  https://github.com/milesmgit?tab=repositories"></a></div>
-        </div>
-      </div>
-      <div class="topPlacement">
-        <button id="toTopButton"><a id="top" href="#header">Top</a></button>
-      </div>`
-    body.style.height = "1500px";
+        <div class="topPlacement">
+          <button id="toTopButton"><a id="top" href="#header">Top</a></button>
+        </div>`
+      body.style.height = "1500px";
+    }, 1000);
+
 
   }
 
+  function displayGallery() {
+    setTimeout(function() {
+      wrapper.innerHTML = `
+        <div id="main-flex">
+        <div class="horizontal-flex-div">
+          <h4>Project Gallery</h4><h6>Tap image to visit the GitHub repository.  There you will find a link to the project demo if applicable.</h6>
+            <div class="parentDiv">
+              <div class="project scale"><p>React: Noobx-Cube - Quiz Game</p><a href="https://github.com/milesmgit/noobx-cube" target="_blank"><img src="img/noobx-cube.jpg" onmouseover="rollover(this)" onmouseout="rollout()" alt="Noobx Cube Project" width="300" height="200" title="React: Noobx-Cube - Quiz Game"></a></div>
+              <div class="project scale"><p>JavaScript: Tic-Tac-Toe Animated - Game</p><a href="https://github.com/milesmgit/tic-tac-toe-1-animated" target="_blank"><img src="img/tic-tac-toe.png" onmouseover="rollover(this)" onmouseout="rollout()" alt="Tic Tac Toe" width="300" height="200" title="JavaScript/HTML/CSS: Tic-Tac-Toe-Animated - Game"></a></div>
+              <div class="project scale"><p>JavaScript: Meal Profiler - Meal Nutrition Calculator</p><a href="https://github.com/milesmgit/milesmgit.github.io" target="_blank"><img src="img/meal-profiler-javascript.png" onmouseover="rollover(this)" onmouseout="rollout()" alt="Meal Profiler JavaScript" width="300" height="200" title="JavaScript/HTML/CSS: Meal-Profiler - Nutrition Calculator"></a></div>
+            </div>
+            <div class="parentDiv">
+              <div class="project scale"><p>JavaScript: 3D Tic-Tac-Toe - Game</p><a href="https://github.com/milesmgit/tic-tac-toe-refactored-3d" target="_blank"><img src="img/tic-tac-toe-2.png" onmouseover="rollover(this)" onmouseout="rollout()" alt="Tic Tac Toe 2" width="300" height="200" title="JavaScript/HTML/CSS: Tic-Tac-Toe-3d - Animated  Zoom out to the max for this, as I did not know how to scale down the cube when I made this. I will update later."></a></div>
+              <div id="instruction" class="project scale" title="Hover a small project square to see it on the bigger rotating cube. Click the smaller project square for GitHub repo and link to project demo." width="300" height="200">Hover Me for Instructions</div>
+              <div class="project scale"><p>C#/SQL/ASP.NET: Meal Profiler - Nutrition Calculator w/Database</p><a href="https://github.com/milesmgit/Profiler" target="_blank"><img src="img/detailedResults.PNG" onmouseover="rollover(this)" onmouseout="rollout()" alt="Meal Profiler C#" width="300" height="200" title="C#/Razor/SQL/Asp.Net: Meal-Profiler - Nutrition Calculator With Database"></a></div>
+            </div>
+            <div class="parentDiv">
+              <div class="project scale"><p>HTML: Haiku - Static Website</p><a href="https://github.com/milesmgit/Code-Louisville-Capstone-Project" target="_blank"><img src="img/haiku.PNG" onmouseover="rollover(this)" onmouseout="rollout()" alt="Haiku HTML" width="300" height="200" title="JavaScript/HTML/CSS: Haiku - Static Website with Gimp Designed Homepage"></a></div>
+              <div class="project scale"><p>HTML: New Roots - Static Website</p><a href="https://github.com/milesmgit/Code-Louisville-Capstone-Project-3" target="_blank"><img src="img/new-roots.PNG" onmouseover="rollover(this)" onmouseout="rollout()" alt="New Roots HTML" width="300" height="200" title="JavaScript/HTML/CSS: New Roots - Static Webpage"></a></div>
+              <div class="project scale"><p>C#: Equipment Catalogue - Console App using JSON Persisted Data</p><a href="https://github.com/milesmgit/Equipment-Catalogue" target="_blank"><img src="img/equipment.png" onmouseover="rollover(this)" onmouseout="rollout()" alt="Equipment Catalogue C# Console" width="300" height="200" title="C#: Equipment-Catalogue - Console Software utilizing JSON to store data persistently."></a></div>
+            </div>
+        </div> <!-- end horizontal-flex-div -->
+        </div>
+        <div class="topPlacement">
+          <button id="toTopButton"><a id="top" href="#header">Top</a></button>
+        </div>`
+      body.style.height = "3000px";
+    }, 1000);
+
+
+  }
+
+  function displayContact() {
+    setTimeout(function() {
+      wrapper.innerHTML = `
+        <div id="main-flex">
+        <div class="horizontal-flex-div">
+          <h4>Contact Me</h4>
+          <h6>Email: milesm427@gmail.com</h6>
+          <h6>Cell: 502.822.8709</h6>
+
+        </div> <!-- end horizontal-flex-div -->
+        </div>
+        `
+      body.style.height = "800px";
+    }, 1000);
+
+
+  }
 
   displayIntro();
 
 
 }
-
-
-
-
-
-//
-// let body = document.getElementById('body');
-// let header = document.getElementById('header');
-// let slide = document.createElement('div');
-// let buttonPlacement = document.getElementById('buttonPlacement');
-// let buttonSlideBack = document.createElement('button');
-// let landingPage = document.getElementById('landingPage');
-//
-// buttonSlideBack.id = "slideBackButton";
-// buttonSlideBack.innerText = "Bio";
-// buttonPlacement.appendChild(buttonSlideBack);
-// buttonSlideBack.addEventListener('click', slideBack);
-//
-// function displayIntro() {
-//
-// header.innerHTML = '';
-// header.appendChild(slide);
-// slide.id = "slide";
-// slide.innerHTML = `
-//   <div class="flex-nav">
-//     <div class="navigation">
-//       <ul>
-//         <li><a href="index.html">Home</a></li>
-//         <li><a onclick="gallery()">Project Gallery</a></li>
-//         <li><a href="contact.html">Contact Me</a></li>
-//       </ul>
-//     </div>
-//     <div class="navbarBrand">
-//       <a href="index.html">
-//         <img src="img/matt-miles.jpeg" id="brand" width="100" height="100" class="d-inline-block align-center pic-brand" alt="" loading="lazy">
-//       </a>
-//     </div>
-//   </div>
-// `
