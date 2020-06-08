@@ -103,6 +103,7 @@ slide.id = "slide";
       <p class="headline1">MATTHEW MILES</p>
       <P class="headline2">DEVELOPER</p>
     `
+    body.style.height = "800px";
   }, 2000);
 
 
