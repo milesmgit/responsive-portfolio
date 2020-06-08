@@ -94,12 +94,15 @@ header {
 
 
 ul#nav {
+
   list-style-type: none;
+  color: white;
 }
 
 li {
   list-style-type: none;
   padding: 5px 0;
+
 }
 
 li a.responsiveLink {
@@ -109,10 +112,28 @@ li a.responsiveLink {
 
 }
 
+li a {
+  color: white;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: violet;
+  text-decoration: none;
+}
+
 li a.responsiveLink:hover {
   color: violet;
   padding: 5px 0;
   text-decoration: none;
+}
+
+h6 a {
+  color: white;
+}
+
+h6 a:hover {
+  color: violet;
 }
 
 

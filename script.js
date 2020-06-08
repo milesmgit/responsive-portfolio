@@ -219,7 +219,7 @@ slide.id = "slide";
         <div class="horizontal-flex-div">
           <h4>Project Gallery</h4><h6>Tap image to visit the GitHub repository.  There you will find a link to the project demo if applicable.</h6>
             <div class="parentDiv">
-              <div class="project scale"><p>React: Noobx-Cube - Quiz Game</p><a href="https://github.com/milesmgit/noobx-cube" target="_blank"><img src="img/noobx-cube.jpg" onmouseover="rollover(this)" onmouseout="rollout()" alt="Noobx Cube Project" width="300" height="200" title="React: Noobx-Cube - Quiz Game"></a></div>
+              <div class="project scale"><p>React: Noobx-Cube - Quiz Game</p><a href="https://github.com/milesmgit/noobx-cube" target="_blank"><img src="img/noobx-thumb.png" onmouseover="rollover(this)" onmouseout="rollout()" alt="Noobx Cube Project" width="300" height="200" title="React: Noobx-Cube - Quiz Game"></a></div>
               <div class="project scale"><p>JavaScript: Tic-Tac-Toe Animated - Game</p><a href="https://github.com/milesmgit/tic-tac-toe-1-animated" target="_blank"><img src="img/tic-tac-toe.png" onmouseover="rollover(this)" onmouseout="rollout()" alt="Tic Tac Toe" width="300" height="200" title="JavaScript/HTML/CSS: Tic-Tac-Toe-Animated - Game"></a></div>
               <div class="project scale"><p>JavaScript: Meal Profiler - Meal Nutrition Calculator</p><a href="https://github.com/milesmgit/milesmgit.github.io" target="_blank"><img src="img/meal-profiler-javascript.png" onmouseover="rollover(this)" onmouseout="rollout()" alt="Meal Profiler JavaScript" width="300" height="200" title="JavaScript/HTML/CSS: Meal-Profiler - Nutrition Calculator"></a></div>
             </div>
@@ -250,7 +250,7 @@ slide.id = "slide";
         <div id="main-flex">
         <div class="horizontal-flex-div">
           <h4>Contact Me</h4>
-          <h6>Email: milesm427@gmail.com</h6>
+          <h6><a href="mailto:milesm427@gmail.com">Email: milesm427@gmail.com</a></h6>
           <h6>Cell: 502.822.8709</h6>
 
         </div> <!-- end horizontal-flex-div -->
