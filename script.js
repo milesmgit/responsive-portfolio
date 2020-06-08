@@ -172,10 +172,10 @@ slide.id = "slide";
 
                     </p>
                     <div class="topPlacement">
-                      <button id="toTopButton"><a class="top" href="#header">Top</a></button>
+                      <button class="toTopButton"><a class="top" href="#header">Top</a></button>
                     </div>
                     `
-                    body.style.height = "2600px";
+                    body.style.height = "2300px";
 
 
 
@@ -205,7 +205,7 @@ slide.id = "slide";
         <div class="topPlacement">
           <button class="toTopButton"><a class="top" href="#header">Top</a></button>
         </div>`
-      body.style.height = "1100px";
+      body.style.height = "1000px";
     }, 1000);
 
 
@@ -235,9 +235,9 @@ slide.id = "slide";
         </div> <!-- end horizontal-flex-div -->
         </div>
         <div class="topPlacement">
-          <button id="toTopButton"><a id="top" href="#header">Top</a></button>
+          <button class="toTopButton"><a class="top" href="#header">Top</a></button>
         </div>`
-      body.style.height = "3000px";
+      body.style.height = "3100px";
     }, 1000);
 
 
