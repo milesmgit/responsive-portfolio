@@ -13,84 +13,49 @@
 
   <header>
     <!-- main navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top">
-      <a class="navbar-brand">Matthew Miles</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <title>Matthew Miles Portfolio</title>
+    </head>
+    <body id="body">
 
-      <div class="navbar navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Project Gallery </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About Me </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Me </a>
-          </li>
-        </ul>
+      <header id="header">
+
+      </header>
+
+
+      <div id="buttonPlacement">
+
       </div>
-      <nav class="navbar navbar-default">
-        <a class="navbar-brand" href="index.html">
-          <img src="img/matt-miles.jpeg" id="brand" width="100" height="100" class="d-inline-block align-center pic-brand" alt="" loading="lazy">
-        </a>
-      </nav>
-    </nav>
-  </header>
 
 
-  <div class="wrapper" id="landingPage">
-      <div class="horizontal-flex-div">
-        <h4>Project Gallery</h4><h5>Tap image to visit the GitHub repository.  There you will find a link to the project demo if applicable.</h5>
-          <div class="parentDiv">
-            <div class="project scale"><p>React: Noobx-Cube - Quiz Game</p><a href="https://github.com/milesmgit/noobx-cube" target="_blank"><img src="img/noobx-cube.jpg" onmouseover="rollover(this)" onmouseout="rollout()" alt="Noobx Cube Project" width="100" height="100" title="React: Noobx-Cube - Quiz Game"></a></div>
-            <div class="project scale"><p>JavaScript: Tic-Tac-Toe Animated - Game</p><a href="https://github.com/milesmgit/tic-tac-toe-1-animated" target="_blank"><img src="img/tic-tac-toe.png" onmouseover="rollover(this)" onmouseout="rollout()" alt="Tic Tac Toe" width="100" height="100" title="JavaScript/HTML/CSS: Tic-Tac-Toe-Animated - Game"></a></div>
-            <div class="project scale"><p>JavaScript: Meal Profiler - Meal Nutrition Calculator</p><a href="https://github.com/milesmgit/milesmgit.github.io" target="_blank"><img src="img/meal-profiler-javascript.png" onmouseover="rollover(this)" onmouseout="rollout()" alt="Meal Profiler JavaScript" width="100" height="100" title="JavaScript/HTML/CSS: Meal-Profiler - Nutrition Calculator"></a></div>
-          </div>
-          <div class="parentDiv">
-            <div class="project scale"><p>JavaScript: 3D Tic-Tac-Toe - Game</p><a href="https://github.com/milesmgit/tic-tac-toe-refactored-3d" target="_blank"><img src="img/tic-tac-toe-2.png" onmouseover="rollover(this)" onmouseout="rollout()" alt="Tic Tac Toe 2" width="100" height="100" title="JavaScript/HTML/CSS: Tic-Tac-Toe-3d - Animated  Zoom out to the max for this, as I did not know how to scale down the cube when I made this. I will update later."></a></div>
-            <div id="instruction" class="project scale" title="Hover a small project square to see it on the bigger rotating cube. Click the smaller project square for GitHub repo and link to project demo." width="100" height="100">Hover Me for Instructions</div>
-            <div class="project scale"><p>C#/SQL/ASP.NET: Meal Profiler - Nutrition Calculator w/Database</p><a href="https://github.com/milesmgit/Profiler" target="_blank"><img src="img/detailedResults.PNG" onmouseover="rollover(this)" onmouseout="rollout()" alt="Meal Profiler C#" width="100" height="100" title="C#/Razor/SQL/Asp.Net: Meal-Profiler - Nutrition Calculator With Database"></a></div>
-          </div>
-          <div class="parentDiv">
-            <div class="project scale"><p>HTML: Haiku - Static Website</p><a href="https://github.com/milesmgit/Code-Louisville-Capstone-Project" target="_blank"><img src="img/haiku.PNG" onmouseover="rollover(this)" onmouseout="rollout()" alt="Haiku HTML" width="100" height="100" title="JavaScript/HTML/CSS: Haiku - Static Website with Gimp Designed Homepage"></a></div>
-            <div class="project scale"><p>HTML: New Roots - Static Website</p><a href="https://github.com/milesmgit/Code-Louisville-Capstone-Project-3" target="_blank"><img src="img/new-roots.PNG" onmouseover="rollover(this)" onmouseout="rollout()" alt="New Roots HTML" width="100" height="100" title="JavaScript/HTML/CSS: New Roots - Static Webpage"></a></div>
-            <div class="project scale"><p>C#: Equipment Catalogue - Console App using JSON Persisted Data</p><a href="https://github.com/milesmgit/Equipment-Catalogue" target="_blank"><img src="img/equipment.png" onmouseover="rollover(this)" onmouseout="rollout()" alt="Equipment Catalogue C# Console" width="100" height="100" title="C#: Equipment-Catalogue - Console Software utilizing JSON to store data persistently."></a></div>
-          </div>
-      </div> <!-- end horizontal-flex-div -->
-
-      <div class="horizontal-flex-div">
-          <div class="rotating-box-huge" id="huge-cube">
-              <div class="single-rb-huge">
-                  <div class="front-side-huge">
-                      <div class="grid-huge" id="front-face"><a href="codelouisville.org" id="louHref"><img src="img/code-louisville.png" id="front-huge" width="400" height="400" title="Click anywhere in the square navigate to codelouisville.org"/></a></div>
-                  </div>
-
-                  <div class="back-side-huge">
-                      <div class="grid-huge" id="back-face"><a href="codelouisville.org" id="louHref2"><img src="img/code-louisville.png" id="back-huge" width="400" height="400" title="Click anywhere in the square navigate to codelouisville.org"/></a></div>
-                  </div>
-                  <div class="left-side-huge">
-                      <div class="grid-huge" id="left-face"><a href="techlouisville.org" id="techLouHref"><img src="img/tech-louisville.png" id="left-huge" width="400" height="400" title="Click anywhere in the square navigate to techouisville.org"/></a></div>
-                  </div>
-                  <div class="right-side-huge">
-                      <div class="grid-huge" id="right-face"><a href="techlouisville.org" id="techLouHref2"><img src="img/tech-louisville.png" id="right-huge" width="400" height="400" title="Click anywhere in the square navigate to techlouisville.org"/></a></div>
-                  </div>
-                  <div class="top-side-huge">
-
-                  </div>
-                  <div class="bottom-side-huge">
-
-                  </div>
-              </div>
-          </div> <!-- end rotating-box-huge -->
-      </div>  <!-- end horizontal-flex-div-->
-  </div> <!-- end wrapper div -->
-
-
-
-
+      <div class="wrapper" id="landingPage">
+        <div class="horizontal-flex-div">
+          <h4>Project Gallery</h4><h5>Tap image to visit the GitHub repository.  There you will find a link to the project demo if applicable.</h5>
+            <div class="parentDiv">
+              <div class="project scale"><p>React: Noobx-Cube - Quiz Game</p><a href="https://github.com/milesmgit/noobx-cube" target="_blank"><img src="img/noobx-cube.jpg" onmouseover="rollover(this)" onmouseout="rollout()" alt="Noobx Cube Project" width="100" height="100" title="React: Noobx-Cube - Quiz Game"></a></div>
+              <div class="project scale"><p>JavaScript: Tic-Tac-Toe Animated - Game</p><a href="https://github.com/milesmgit/tic-tac-toe-1-animated" target="_blank"><img src="img/tic-tac-toe.png" onmouseover="rollover(this)" onmouseout="rollout()" alt="Tic Tac Toe" width="100" height="100" title="JavaScript/HTML/CSS: Tic-Tac-Toe-Animated - Game"></a></div>
+              <div class="project scale"><p>JavaScript: Meal Profiler - Meal Nutrition Calculator</p><a href="https://github.com/milesmgit/milesmgit.github.io" target="_blank"><img src="img/meal-profiler-javascript.png" onmouseover="rollover(this)" onmouseout="rollout()" alt="Meal Profiler JavaScript" width="100" height="100" title="JavaScript/HTML/CSS: Meal-Profiler - Nutrition Calculator"></a></div>
+            </div>
+            <div class="parentDiv">
+              <div class="project scale"><p>JavaScript: 3D Tic-Tac-Toe - Game</p><a href="https://github.com/milesmgit/tic-tac-toe-refactored-3d" target="_blank"><img src="img/tic-tac-toe-2.png" onmouseover="rollover(this)" onmouseout="rollout()" alt="Tic Tac Toe 2" width="100" height="100" title="JavaScript/HTML/CSS: Tic-Tac-Toe-3d - Animated  Zoom out to the max for this, as I did not know how to scale down the cube when I made this. I will update later."></a></div>
+              <div id="instruction" class="project scale" title="Hover a small project square to see it on the bigger rotating cube. Click the smaller project square for GitHub repo and link to project demo." width="100" height="100">Hover Me for Instructions</div>
+              <div class="project scale"><p>C#/SQL/ASP.NET: Meal Profiler - Nutrition Calculator w/Database</p><a href="https://github.com/milesmgit/Profiler" target="_blank"><img src="img/detailedResults.PNG" onmouseover="rollover(this)" onmouseout="rollout()" alt="Meal Profiler C#" width="100" height="100" title="C#/Razor/SQL/Asp.Net: Meal-Profiler - Nutrition Calculator With Database"></a></div>
+            </div>
+            <div class="parentDiv">
+              <div class="project scale"><p>HTML: Haiku - Static Website</p><a href="https://github.com/milesmgit/Code-Louisville-Capstone-Project" target="_blank"><img src="img/haiku.PNG" onmouseover="rollover(this)" onmouseout="rollout()" alt="Haiku HTML" width="100" height="100" title="JavaScript/HTML/CSS: Haiku - Static Website with Gimp Designed Homepage"></a></div>
+              <div class="project scale"><p>HTML: New Roots - Static Website</p><a href="https://github.com/milesmgit/Code-Louisville-Capstone-Project-3" target="_blank"><img src="img/new-roots.PNG" onmouseover="rollover(this)" onmouseout="rollout()" alt="New Roots HTML" width="100" height="100" title="JavaScript/HTML/CSS: New Roots - Static Webpage"></a></div>
+              <div class="project scale"><p>C#: Equipment Catalogue - Console App using JSON Persisted Data</p><a href="https://github.com/milesmgit/Equipment-Catalogue" target="_blank"><img src="img/equipment.png" onmouseover="rollover(this)" onmouseout="rollout()" alt="Equipment Catalogue C# Console" width="100" height="100" title="C#: Equipment-Catalogue - Console Software utilizing JSON to store data persistently."></a></div>
+            </div>
+        </div> <!-- end horizontal-flex-div -->
+      </div> <!-- end wrapper div -->
 
 
 
