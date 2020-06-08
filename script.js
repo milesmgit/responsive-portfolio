@@ -175,7 +175,7 @@ slide.id = "slide";
                       <button id="toTopButton"><a id="top" href="#header">Top</a></button>
                     </div>
                     `
-                    body.style.height = "2400px";
+                    body.style.height = "2600px";
 
 
 
@@ -186,23 +186,26 @@ slide.id = "slide";
     setTimeout(function() {
       wrapper.innerHTML = `
         <div id="main-flex">
-          <div class="card">
-            <div class="resources"><p>Resume</p><a href="https://drive.google.com/file/d/1-tlYJYkcMLbY3jegKX5seRLQ8ff6mQgM/view?usp=sharing" target="_blank"><img src="img/google-drive.jpeg"  alt="Matthew Miles: Resume" width="75" height="75" title="Click to view/download resume (Google Drive):  https://drive.google.com/file/d/1-tlYJYkcMLbY3jegKX5seRLQ8ff6mQgM/view?usp=sharing"></a></div>
-          </div>
-          <div class="card">
-            <div class="resources"><p>LinkedIn Profile</p><a href="https://linkedin.com/in/matthew-miles-code-louisville" target="_blank"><img src="img/linked.jpeg"  alt="Matthew Miles: Linked-In Profile" width="75" height="75" title="Click to view my Linked-In Profile:  https://linkedin.com/in/matthew-miles-code-louisville"></a></div>
-          </div>
-          <div class="card">
-            <div class="resources"><p>GitHub Profile</p><a href="https://github.com/milesmgit?tab=repositories" target="_blank"><img src="img/github.png"  alt="Matthew Miles: GitHub" width="75" height="75" title="Click to view GitHub Profile:  https://github.com/milesmgit?tab=repositories"></a></div>
-          </div>
-          <div class="card">
-            <div class="resources"><p>Bio</p><img id="matt-bio" src="img/matt-miles.jpeg"  onclick="displayBio()" alt="Matthew Miles: Bio" width="75" height="75" title="Click to view Bio:  https://github.com/milesmgit?tab=repositories"></a></div>
-          </div>
+          <a href="https://drive.google.com/file/d/1-tlYJYkcMLbY3jegKX5seRLQ8ff6mQgM/view?usp=sharing" target="_blank">
+            <div class="card">
+              <div class="resources"><p>Resume</p><img src="img/google-drive.jpeg"  alt="Matthew Miles: Resume" width="75" height="75" title="Click to view/download resume (Google Drive):  https://drive.google.com/file/d/1-tlYJYkcMLbY3jegKX5seRLQ8ff6mQgM/view?usp=sharing"></div>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/matthew-miles-code-louisville" target="_blank">
+            <div class="card">
+              <div class="resources"><p>LinkedIn Profile</p><img src="img/linked.jpeg"  alt="Matthew Miles: Linked-In Profile" width="75" height="75" title="Click to view my Linked-In Profile:  https://linkedin.com/in/matthew-miles-code-louisville"></div>
+            </div>
+          </a>
+          <a href="https://github.com/milesmgit?tab=repositories" target="_blank">
+            <div class="card">
+              <div class="resources"><p>GitHub Profile</p><img src="img/github.png"  alt="Matthew Miles: GitHub" width="75" height="75" title="Click to view GitHub Profile:  https://github.com/milesmgit?tab=repositories"></div>
+            </div>
+          </a>
         </div>
         <div class="topPlacement">
           <button id="toTopButton"><a id="top" href="#header">Top</a></button>
         </div>`
-      body.style.height = "1300px";
+      body.style.height = "1100px";
     }, 1000);
 
 
