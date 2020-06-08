@@ -175,6 +175,8 @@ slide.id = "slide";
                       <button id="toTopButton"><a id="top" href="#header">Top</a></button>
                     </div>
                     `
+                    body.style.height = "2400px";
+
 
 
   }
@@ -200,7 +202,7 @@ slide.id = "slide";
         <div class="topPlacement">
           <button id="toTopButton"><a id="top" href="#header">Top</a></button>
         </div>`
-      body.style.height = "1500px";
+      body.style.height = "1300px";
     }, 1000);
 
 
