@@ -115,11 +115,14 @@ li a.responsiveLink {
 li a {
   color: white;
   text-decoration: none;
+  text-shadow: 1px 2px black;
+  font-weight: 200;
 }
 
 li a:hover {
   color: violet;
   text-decoration: none;
+
 }
 
 li a.responsiveLink:hover {
