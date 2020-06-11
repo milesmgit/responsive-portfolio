@@ -187,7 +187,7 @@ slide.id = "slide";
     setTimeout(function() {
       wrapper.innerHTML = `
         <div id="main-flex">
-          <a href="https://drive.google.com/file/d/1-tlYJYkcMLbY3jegKX5seRLQ8ff6mQgM/view?usp=sharing" target="_blank">
+          <a href="https://drive.google.com/file/d/1M9dmvrO5BQi0DyKjvHGpD6t-doLqf1wG/view?usp=sharing" target="_blank">
             <div class="card">
               <div class="resources"><p>Resume</p><img src="img/google-drive.jpeg"  alt="Matthew Miles: Resume" width="75" height="75" title="Click to view/download resume (Google Drive):  https://drive.google.com/file/d/1-tlYJYkcMLbY3jegKX5seRLQ8ff6mQgM/view?usp=sharing"></div>
             </div>
