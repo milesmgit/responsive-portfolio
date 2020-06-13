@@ -189,7 +189,7 @@ slide.id = "slide";
         <div id="main-flex">
           <a href="https://drive.google.com/file/d/1M9dmvrO5BQi0DyKjvHGpD6t-doLqf1wG/view?usp=sharing" target="_blank">
             <div class="card">
-              <div class="resources"><p>Resume</p><img src="img/google-drive.jpeg"  alt="Matthew Miles: Resume" width="75" height="75" title="Click to view/download resume (Google Drive):  https://drive.google.com/file/d/1-tlYJYkcMLbY3jegKX5seRLQ8ff6mQgM/view?usp=sharing"></div>
+              <div class="resources"><p>Resume</p><img src="img/google-drive.jpeg"  alt="Matthew Miles: Resume" width="75" height="75" title="Click to view/download resume (Google Drive):  https://drive.google.com/file/d/1M9dmvrO5BQi0DyKjvHGpD6t-doLqf1wG/view?usp=sharing"></div>
             </div>
           </a>
           <a href="https://linkedin.com/in/matthew-miles-code-louisville" target="_blank">
